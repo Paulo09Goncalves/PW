@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orçamento</title>
+</head>
+<body>
+    <form name="frmCompra" >
+            <label>Suíte:</label>
+            <select name="slcSuite" id="slcSuite">
+            <option value="0">Selecione...</option>
+            <option value="1">Suite 1</option>
+            <option value="2">Suite 2</option>
+            <option value="3">Suite 3</option>
+            <option value="4">Suite 4</option>
+            </select>
+        <br>
+        <label>Serviços adicionais:</label>
+        <input type="checkbox" name="cbServicos" id="cbServicos">
+        <br>
+        <label>Numero de Dias:</label>
+        <input type="text" name="qtdeDias" id="qtdeDias"></input>
+        <br>
+        <label>Quantidade:</label>
+        <input type="text" name="qtde" id="qtde">
+        <br>
+        <input type="button" value="Comprar" onclick="comprar()">
+    </form>
+    <hr>
+    <h2>Resumo da compra</h2>
+    <div id="nomeSuite"></div>
+    <br>
+    <div id="valorUnitario"></div>
+    <br>
+    <div id="valorTotal"></div>
+    <script src="js/teste.js"></script>
+</body>
+</html>
